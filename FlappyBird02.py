@@ -99,9 +99,9 @@ pipe_height = [200,400,600]
 game_over_surface = pygame.image.load('assets/message.png')
 game_over_rect = game_over_surface.get_rect(center = (240,400))
 
-flap_sound = pygame.mixer.Sound('sound/sfx_wing.wav')
-death_sound = pygame.mixer.Sound('sound/sfx_hit.wav')
-score_sound = pygame.mixer.Sound('sound/sfx_point.wav')
+flap_sound = pygame.mixer.Sound('sfx_wing.wav')
+death_sound = pygame.mixer.Sound('sfx_hit.wav')
+score_sound = pygame.mixer.Sound('sfx_point.wav')
 score_sound_countdown = 100
 while True:
 	for event in pygame.event.get():
