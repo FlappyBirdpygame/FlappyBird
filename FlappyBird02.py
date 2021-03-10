@@ -66,7 +66,7 @@ pygame.mixer.pre_init(frequency = 44100, size = 16, channels = 1, buffer = 400)
 pygame.init()
 screen = pygame.display.set_mode((480,800))
 clock = pygame.time.Clock()
-game_font = pygame.font.Font('04B_19.TTF',30)
+game_font = pygame.font.Font('sd so cute v.1.ttf',52)
 
 # Game Variables
 gravity = 0.25
@@ -75,12 +75,12 @@ game_active = True
 score = 0
 high_score = 0
 
-bg_surface = pygame.image.load('assets/background-night.png').convert()
+bg_surface = pygame.image.load('assets/Background01.png').convert()
 bg_surface = pygame.transform.scale2x(bg_surface)
 
-bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/redbird-downflap.png').convert_alpha())
-bird_midflap = pygame.transform.scale2x(pygame.image.load('assets/bluebird-midflap.png').convert_alpha())
-bird_upflap = pygame.transform.scale2x(pygame.image.load('assets/yellowbird-upflap.png').convert_alpha())
+bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/Flapdown.png.png').convert_alpha())
+bird_midflap = pygame.transform.scale2x(pygame.image.load('assets/Flapmid.png').convert_alpha())
+bird_upflap = pygame.transform.scale2x(pygame.image.load('assets/Flaptop.png').convert_alpha())
 bird_frames = [bird_downflap,bird_midflap,bird_upflap]
 bird_index = 0
 bird_surface = bird_frames[bird_index]
@@ -89,7 +89,7 @@ bird_rect = bird_surface.get_rect(center = (100,400))
 BIRDFLAP = pygame.USEREVENT + 1
 pygame.time.set_timer(BIRDFLAP,100)
 
-pipe_surface = pygame.image.load('assets/pipe-red.png')
+pipe_surface = pygame.image.load('assets/pipe'.png)
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
