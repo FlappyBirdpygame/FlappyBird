@@ -78,7 +78,7 @@ high_score = 0
 bg_surface = pygame.image.load('assets/Background01.png').convert()
 bg_surface = pygame.transform.scale2x(bg_surface)
 
-bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/Flapdown.png.png').convert_alpha())
+bird_downflap = pygame.transform.scale2x(pygame.image.load('assets/Flapdown.png').convert_alpha())
 bird_midflap = pygame.transform.scale2x(pygame.image.load('assets/Flapmid.png').convert_alpha())
 bird_upflap = pygame.transform.scale2x(pygame.image.load('assets/Flaptop.png').convert_alpha())
 bird_frames = [bird_downflap,bird_midflap,bird_upflap]
@@ -89,7 +89,7 @@ bird_rect = bird_surface.get_rect(center = (100,400))
 BIRDFLAP = pygame.USEREVENT + 1
 pygame.time.set_timer(BIRDFLAP,100)
 
-pipe_surface = pygame.image.load('assets/pipe'.png)
+pipe_surface = pygame.image.load('assets/pipe.png')
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
